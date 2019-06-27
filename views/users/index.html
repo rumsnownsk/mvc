@@ -1,0 +1,27 @@
+
+<h1>{{hello}}</h1>
+
+<h2>Юзеры</h2>
+
+{% if resFind %}
+    <h2>Найденые Юзеры:</h2>
+    {% for item in resFind %}
+        <li>{{item.name}}</li>
+    {% endfor %}
+{% endif %}
+
+</br>
+<h2>Все пользователи:</h2>
+
+{% for user in users %}
+    <li>{{user.name}}</li>
+{% endfor %}
+
+
+<a href="/users/create">Create user</a>
+</br>
+
+<form action="/users/findUser" method="get">
+    <input type="text" name="like">
+    <input type="submit" value="find">
+</form>

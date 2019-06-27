@@ -1,0 +1,9 @@
+{
+    "require": {
+        "illuminate/database": "^5.8",
+        "twig/twig": "^2.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3"
+    }
+}
